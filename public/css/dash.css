@@ -1,0 +1,49 @@
+body{
+    background:#eee
+}
+.dash{
+
+    border:1px inset #222;
+    padding:0px;
+    background:#222;
+}
+.dash-item a{
+    text-decoration:none;
+    color:#eee;
+
+    padding:20px;
+    text-align:center;
+    width:100%;
+}
+.dash-active{
+    background:#111
+}
+.dash-item a:hover{
+    background:#111
+}
+.conteudo{
+    background:#eee;
+    min-height:768px;
+
+    border:1px outset #eee;
+}
+.none{
+    display:none
+}
+.tile-incomplete{
+    background:#e55;height:250px;border:1px solid #ddd;color:#eee;
+}
+.tile-complete{
+    background:#595;height:250px;border:1px solid #ddd;color:#eee;
+}
+.tile-peding{
+    background:#eb5;height:250px;border:1px solid #ddd;color:#eee;
+}
+.tile-peding:hover{
+    background:#4a4;
+
+}
+.transaction-1{
+    transition-duration: 0.5s;
+}
+
