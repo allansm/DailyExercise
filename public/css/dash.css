@@ -15,11 +15,14 @@ body{
     text-align:center;
     width:100%;
 }
+.dash-item a:hover{
+    background:#111
+}
 .dash-active{
     background:#111
 }
-.dash-item a:hover{
-    background:#111
+.dash-active:hover{
+    background:#000
 }
 .conteudo{
     background:#eee;
@@ -31,13 +34,20 @@ body{
     display:none
 }
 .tile-incomplete{
-    background:#e55;height:250px;border:1px solid #ddd;color:#eee;
+    background:#e55;
+    height:250px;
+    border:1px solid #ddd;
+    color:#eee;
 }
 .tile-complete{
-    background:#595;height:250px;border:1px solid #ddd;color:#eee;
+    background:#595;
+    height:250px;
+    border:1px solid #ddd;color:#eee;
 }
 .tile-peding{
-    background:#eb5;height:250px;border:1px solid #ddd;color:#eee;
+    background:#eb5;
+    height:250px;
+    border:1px solid #ddd;color:#eee;
 }
 .tile-peding:hover{
     background:#4a4;

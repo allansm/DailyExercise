@@ -21,4 +21,7 @@ class PageController extends Controller
     public function history(){
         return view("history");
     }
+    public function exerciseHistory(){
+        return view("exercise_history");
+    }
 }

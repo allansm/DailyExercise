@@ -15,28 +15,28 @@
     <div class="col-md-4" style="padding:10px">
         <input type="number" class="form-control " name="login" placeholder="vezes ao dia"  autofocus="" />
     </div>
-    <div class="col-md-3" style="padding:10px">
+    <div class="col-md-3 col-sm-4 checkbox" style="padding:10px">
         <input type="checkbox" value="segunda" class="">&nbsp;segunda
     </div>
-    <div class="col-md-3" style="padding:10px">
+    <div class="col-md-3 col-sm-4 checkbox" style="padding:10px">
         <input type="checkbox" value="segunda" class="">&nbsp;terca
     </div>
-    <div class="col-md-3" style="padding:10px">
+    <div class="col-md-3 col-sm-4 checkbox" style="padding:10px">
         <input type="checkbox" value="segunda" class="">&nbsp;quarta
     </div>
-    <div class="col-md-3" style="padding:10px">
+    <div class="col-md-3 col-sm-4 checkbox" style="padding:10px">
         <input type="checkbox" value="segunda" class="">&nbsp;quinta
     </div>
-    <div class="col-md-3" style="padding:10px">
+    <div class="col-md-3 col-sm-4 checkbox" style="padding:10px">
         <input type="checkbox" value="segunda" class="">&nbsp;sexta
     </div>
-    <div class="col-md-3" style="padding:10px">
+    <div class="col-md-3 col-sm-4 checkbox" style="padding:10px">
         <input type="checkbox" value="segunda" class="">&nbsp;sabado
     </div>
-    <div class="col-md-3" style="padding:10px">
+    <div class="col-md-3 col-sm-4 checkbox" style="padding:10px">
         <input type="checkbox" value="segunda" class="">&nbsp;domingo
     </div>
-    <div class="col-md-3" style="padding:10px">
+    <div class="col-md-3 " style="padding:10px">
         
     </div>
     

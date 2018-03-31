@@ -20,4 +20,5 @@ Route::get("/logout","UserController@logout")->middleware("auth")->name("logout"
 Route::get("/cadastro","PageController@register")->name("cadastro");
 Route::get("/dashboard/formulario/exercicio","PageController@registerExercise")->middleware("auth")->name("cadastro.exercicio");
 Route::post("/cadastrar","AccountController@register")->name("cadastro.usuario");
-Route::get("/dashboard/registros","PageController@history")->name("dashboard.registros");
+Route::get("/dashboard/registros","PageController@history")->middleware("auth")->name("dashboard.registros");
+Route::get("/dashboard/registros/exercicio","PageController@exerciseHistory")->middleware("auth")->name("dashboard.registros.exercicio");
