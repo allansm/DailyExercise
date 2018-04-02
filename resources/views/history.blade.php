@@ -9,13 +9,19 @@
             <td>dias</td>
             <td>deletar</td>
         </tr>
+        @foreach(Auth()->user()->account->exercise->all() as $exercise)
         <tr>
-            <td>1</td>
-            <td>teste</td>
-            <td>tempo</td>
-            <td>segunda,terca,quarta,quinta,sexta,sabado,domingo</td>
+            <td>{{$exercise->id}}</td>
+            <td>{{$exercise->title}}</td>
+            <td>{{($exercise->type == "count")?"repetição":"tempo"}}</td>
+            <td>
+                @foreach(explode(";",$exercise->days) as $day)
+                    {{$day." "}}
+                @endforeach
+            </td>
             <td ><a href="" style="color:#e00">x</a></td>
         </tr>
+        @endforeach
     </table>
 @endsection
 

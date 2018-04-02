@@ -1,5 +1,6 @@
 body{
-    background:#eee
+    background:#eee;
+    overflow-x: hidden
 }
 .dash{
 

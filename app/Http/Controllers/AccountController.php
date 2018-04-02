@@ -14,14 +14,24 @@ class AccountController extends Controller
         if($request->senha == $request->csenha){
             try{
                 DB::beginTransaction();
+                
                 $person->nome = $request->nome;
                 $person->sobrenome = $request->sobrenome;
                 $person->email = $request->email;
                 $person->save();
                 
+                $person = $person->where("email","=",$person->email)->first();
+                
                 $user->login = $request->login;
                 $user->password = bcrypt($request->senha);
                 $user->save();
+                
+                $user = $user->where("login","=",$user->login)->first();
+                
+                $account->user_id = $user->id;
+                $account->people_id = $person->id;
+                $account->save();
+                
                 DB::commit();
                 return redirect()->route("home");
             }catch(Exception $e){

@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use App\User;
-
+use App\Exercise;
 class Account extends Model
 {
     protected $fillable = [
@@ -12,5 +12,8 @@ class Account extends Model
     ];
     public function user(){
         return $this->belongsTo(User::class,"user_id");
+    }
+    public function exercise(){
+        return $this->hasMany(Exercise::class,"account_id");
     }
 }
