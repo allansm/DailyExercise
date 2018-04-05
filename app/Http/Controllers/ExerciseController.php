@@ -30,4 +30,13 @@ class ExerciseController extends Controller
        }
        return redirect()->route("cadastro.exercicio");
     }
+    public function delete(Request $request,Exercise $exercise){
+        try{
+            $exercise = $exercise->where("id","=",$request->q);
+            $exercise->delete();
+            return redirect()->back();
+        }catch(Exception $e){
+            return redirect()->back();
+        }
+    }
 }

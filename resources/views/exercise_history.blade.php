@@ -5,17 +5,17 @@
     <table class="table table-bordered" style="background:#fff;text-align: center">
         <tr>
             <td>#</td>
-            <td>titulo</td>
-            <td>contagem</td>
-            <td>intensidade</td>
-            <td>data</td>
+            <td>Titulo</td>
+            <td>Contagem</td>
+            <td>Intensidade</td>
+            <td>Data/Hora</td>
         </tr>
         @foreach(Auth()->user()->account->exercise->all() as $exercise)
             @foreach($exercise->historic->all() as $historic)
                 <tr>
                     <td>{{$historic->id}}</td>
                     <td>{{$exercise->title}}</td>
-                    <td>{{($exercise->type == "count")?"repetição":"tempo"}}</td>
+                    <td>{{($exercise->type == "count")?"Repetição":"Tempo"}}</td>
                     <td>{{$historic->intensity}}</td>
                     <td>{{$historic->created_at}}</td>
                 </tr>

@@ -25,3 +25,4 @@ Route::get("/dashboard/registros/exercicio","PageController@exerciseHistory")->m
 Route::post("/dashboard/registrar/exercicio","ExerciseController@register")->middleware("auth")->name("dashboard.registrar.exercicio");
 Route::get("/dashboard/formulario/registro","HistoricController@historic")->middleware("auth")->name("dashboard.formulario.registro");
 Route::post("/dashboard/registrar/historico","HistoricController@register")->middleware("auth")->name("dashboard.registrar.historico");
+Route::get("/dashboard/deletar/exercicio","ExerciseController@delete")->middleware("auth")->name("dashboard.deletar.exercicio");
