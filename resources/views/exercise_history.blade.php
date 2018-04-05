@@ -38,5 +38,10 @@
             </div>
         </div>
     </div>-->
+    @foreach(Auth()->user()->account->exercise->all() as $exercise)
+        @foreach($exercise->historic->all() as $historic)
+            {{$historic->exercise_id}}
+        @endforeach
+    @endforeach
 </div>
 @endsection
