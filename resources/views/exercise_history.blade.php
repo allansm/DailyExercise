@@ -10,15 +10,17 @@
             <td>Contagem</td>
             <td>Intensidade</td>
             <td>Data/Hora</td>
+            <td>Deletar</td>
         </tr>
         @foreach(Auth()->user()->account->exercise->all() as $exercise)
             @foreach($exercise->historic->all() as $historic)
-                <tr style="background: {{(explode(" ",$historic->created_at)[0] == date("Y-m-d"))?"#007bff;color:#eee":"#eee" }}">
+                <tr style="color: {{(explode(" ",$historic->created_at)[0] == date("Y-m-d"))?"#007bff;":"#eee" }}">
                     <td>{{$historic->id}}</td>
                     <td>{{$exercise->title}}</td>
                     <td>{{($exercise->type == "count")?"Repetição":"Tempo"}}</td>
                     <td>{{$historic->intensity}}</td>
                     <td>{{$historic->created_at}}</td>
+                    <td><a href="{{route("dashboard.deletar.historico")}}?q={{$historic->id}}" style="color:#f00">x</a></td>
                 </tr>
             @endforeach
         @endforeach

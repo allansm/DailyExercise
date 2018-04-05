@@ -32,4 +32,15 @@ class HistoricController extends Controller
         }
         return redirect()->route("home");
     }
+    public function delete(Request $request ,Historic $historic){
+        DB::beginTransaction();
+        try{
+            $historic = $historic->where("id","=",$request->q)->first();
+            $historic->delete();
+            DB::commit();
+        }catch(Exception $e){
+            DB::rollback();
+        }
+        return redirect()->back();
+    }
 }

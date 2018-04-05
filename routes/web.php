@@ -26,3 +26,4 @@ Route::post("/dashboard/registrar/exercicio","ExerciseController@register")->mid
 Route::get("/dashboard/formulario/registro","HistoricController@historic")->middleware("auth")->name("dashboard.formulario.registro");
 Route::post("/dashboard/registrar/historico","HistoricController@register")->middleware("auth")->name("dashboard.registrar.historico");
 Route::get("/dashboard/deletar/exercicio","ExerciseController@delete")->middleware("auth")->name("dashboard.deletar.exercicio");
+Route::get("/dashboard/deletar/historico","HistoricController@delete")->middleware("auth")->name("dashboard.deletar.historico");
