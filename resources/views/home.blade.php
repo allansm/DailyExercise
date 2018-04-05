@@ -26,5 +26,14 @@
             @endif
         @endforeach
     @endforeach
+    @if(count(Auth()->user()->account->exercise->all()) <= 0)
+        <div class="col-lg-12 col-md-12 " style="padding:10px">
+           <a href="{{route("cadastro.exercicio")}}">
+                <div class="col-md-12  transaction-1" style="color:#eee">
+                    <div class="col-md-12" style="text-align:center;padding:10px;background:#007bff"><h4>Adicionar Novo</h4></div>
+                </div>
+           </a>
+       </div>
+    @endif
 </div>
 @endsection
