@@ -1,7 +1,7 @@
 @extends("layouts.dash")
 @section("dash-title","Registros")
 @section("dash-content")
-    <table class="table table-bordered" style="background:#fff;text-align: center">
+    <table class="table table-dark table-bordered" style="text-align: center;">
         <tr>
             <td>#</td>
             <td>Titulo</td>
