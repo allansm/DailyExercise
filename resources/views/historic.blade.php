@@ -15,7 +15,7 @@
             </select>   
         </div>
         <div class="col-md-4" style="padding:10px">
-            <input type="{{($exercise->type == "count")?"number":"time"}}" class="form-control " name="intensity"  placeholder="{{($exercise->type == "count")?"Repetições":"Tempo"}}"   autofocus="" />
+            <input type="{{($exercise->type == "count")?"number":"number"}}" class="form-control " name="intensity"  placeholder="{{($exercise->type == "count")?"Repetições":"Minutos"}}"   autofocus="" />
         </div>
         
 

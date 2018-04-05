@@ -1,5 +1,5 @@
 @extends("layouts.dash")
-@section("dash-title","Hoje:".$days[date("N")-1])
+@section("dash-title","Hoje:".$days[date("N")])
 @section("dash-content")
 <div class="row">
     <!--<div class="col-lg-4 col-md-6 " style="padding:10px">
@@ -28,7 +28,7 @@
     </div>-->
     @foreach(Auth()->user()->account->exercise->all() as $exercise)
         @foreach(explode(";",$exercise->days) as $day)
-            @if($days[date("N")-1] == $day)
+            @if($days[date("N")] == $day)
                 
                  <div class="col-lg-4 col-md-6 " style="padding:10px">
                    <a href="{{route("dashboard.formulario.registro")."?q=".$exercise->id}}">

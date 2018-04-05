@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function index(){
-        $days = ["segunda","terça","quarta","quinta","sexta","sabado","domingo"];
+        $days = ["","segunda","terça","quarta","quinta","sexta","sabado","domingo"];
         return view("home")->with("days",$days);
     }
     public function login(){
