@@ -1,7 +1,7 @@
 @extends("layouts.dash")
 @section("dash-title","Hoje:".$days[date("N")-1])
 @section("dash-content")
-<div class="row ">
+<div class="row">
     <!--<div class="col-lg-4 col-md-6 " style="padding:10px">
         <div class="col-md-12 tile-incomplete" style="">
             <div class="col-md-12" style="text-align:center;padding:10px;"><h4>Exercicio</h4></div>

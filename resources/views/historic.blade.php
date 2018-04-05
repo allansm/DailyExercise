@@ -2,7 +2,7 @@
 @section("dash-title","Registrar")
 @section("dash-content")
 <div class="">
-    <form method="post" action="{{route("dashboard.registrar.exercicio")}}" class="col-md-12 row">
+    <form method="post" action="{{route("dashboard.registrar.historico")}}" class="col-md-12 row">
         {!! csrf_field() !!}
         <input type="text" name="q" value="{{$exercise->id}}" hidden>
         <div class="col-md-12" style="padding:10px">

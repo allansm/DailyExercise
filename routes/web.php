@@ -23,4 +23,5 @@ Route::post("/cadastrar","AccountController@register")->name("cadastro.usuario")
 Route::get("/dashboard/registros","PageController@history")->middleware("auth")->name("dashboard.registros");
 Route::get("/dashboard/registros/exercicio","PageController@exerciseHistory")->middleware("auth")->name("dashboard.registros.exercicio");
 Route::post("/dashboard/registrar/exercicio","ExerciseController@register")->middleware("auth")->name("dashboard.registrar.exercicio");
-Route::get("/dashboard/formulario/registro","HistoricController@register")->middleware("auth")->name("dashboard.formulario.registro");
+Route::get("/dashboard/formulario/registro","HistoricController@historic")->middleware("auth")->name("dashboard.formulario.registro");
+Route::post("/dashboard/registrar/historico","HistoricController@register")->middleware("auth")->name("dashboard.registrar.historico");

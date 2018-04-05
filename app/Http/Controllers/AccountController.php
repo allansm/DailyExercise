@@ -11,10 +11,9 @@ use Illuminate\Support\Facades\DB;
 class AccountController extends Controller
 {
     public function register(Request $request,User $user,Person $person,Account $account){
+        DB::beginTransaction();
         if($request->senha == $request->csenha){
             try{
-                DB::beginTransaction();
-                
                 $person->nome = $request->nome;
                 $person->sobrenome = $request->sobrenome;
                 $person->email = $request->email;
