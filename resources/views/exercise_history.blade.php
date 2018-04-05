@@ -9,7 +9,7 @@
             <td>Titulo</td>
             <td>Contagem</td>
             <td>Intensidade</td>
-            <td>Data/Hora</td>
+            <td>Data</td>
             <td>Deletar</td>
         </tr>
         @foreach(Auth()->user()->account->exercise->all() as $exercise)
@@ -19,7 +19,7 @@
                     <td>{{$exercise->title}}</td>
                     <td>{{($exercise->type == "count")?"Repetição":"Tempo"}}</td>
                     <td>{{$historic->intensity}}</td>
-                    <td>{{$historic->created_at}}</td>
+                    <td>{{date("d/m/Y",strtotime($historic->created_at))}}</td>
                     <td><a href="{{route("dashboard.deletar.historico")}}?q={{$historic->id}}" style="color:#f00">x</a></td>
                 </tr>
             @endforeach

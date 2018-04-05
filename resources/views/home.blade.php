@@ -1,5 +1,5 @@
 @extends("layouts.dash")
-@section("dash-title","Hoje:".$days[date("N")])
+@section("dash-title","Hoje : ".ucwords($days[date("N")]))
 @section("dash-content")
 <div class="row">
     @foreach(Auth()->user()->account->exercise->all() as $exercise)
