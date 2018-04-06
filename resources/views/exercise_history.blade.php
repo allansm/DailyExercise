@@ -2,7 +2,7 @@
 @section("dash-title","Historico diario")
 @section("dash-content")
 <div class="row table-responsive">
-    Hoje :&nbsp;<div style="background:#007bff;height:20px;width:20px"></div><br/><br/>
+    Hoje :&nbsp;<div style="background:#007bff;height:20px;width:20px;float:right;border-radius:100%"></div><br/><br/>
     <table class="table table-sm table-dark table-striped " style="text-align: center;">
         <tr>
             <td>#</td>
