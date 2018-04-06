@@ -1,11 +1,12 @@
 <html>
     <head>
         <title>DailyExercise</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="{{asset("/css/login.css")}}" />
     </head>
     <body>
-        <div class="wrapper">
+        <div class="col-md-12 order-md-1 wrapper">
           <form class="form-signin" method="post" action="{{route("autenticar")}}">
              {!! csrf_field() !!}
             <h2 class="form-signin-heading">Login</h2><br/>

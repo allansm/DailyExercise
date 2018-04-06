@@ -3,7 +3,7 @@
 @section("dash-content")
 <div class="row table-responsive">
     Hoje :&nbsp;<div style="background:#007bff;height:20px;width:20px"></div><br/><br/>
-    <table class="table table-dark table-bordered" style="text-align: center;">
+    <table class="table table-sm table-dark table-striped " style="text-align: center;">
         <tr>
             <td>#</td>
             <td>Exercicio</td>
@@ -19,7 +19,7 @@
                     <td>{{$exercise->title}}</td>
                     <td>{{($exercise->type == "count")?"Repetição":"Tempo"}}</td>
                     <td>{{$historic->intensity}}</td>
-                    <td>{{$days[date("N",strtotime($historic->created_at))]}}</td>
+                    <td>{{$days[date("N",strtotime($historic->created_at))].date(" d/m/Y",strtotime($historic->created_at))}}</td>
                     <td><a href="{{route("dashboard.deletar.historico")}}?q={{$historic->id}}" style="color:#f00">x</a></td>
                 </tr>
             @endforeach
