@@ -45,6 +45,11 @@ body{
     height:250px;
     border:1px solid #ddd;color:#eee;
 }
+.tile-register{
+    background:#07f;
+    height:270px;
+    border:1px outset #ddd;color:#eee;
+}
 .tile-peding{
     background:#eb5;
     height:250px;

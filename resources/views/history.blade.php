@@ -2,7 +2,7 @@
 @section("dash-title","Registros")
 @section("dash-content")
 <div class="row table-responsive ">
-    <table class="table table-sm table-dark table-striped " style="text-align: center;">
+    <table class="table  table-dark table-striped " style="text-align: center;">
         <tr>
             <td>#</td>
             <td>Exercicio</td>
