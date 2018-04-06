@@ -9,7 +9,7 @@
                    <a href="{{route("dashboard.formulario.registro")."?q=".$exercise->id}}">
                    <div class="col-md-12 {{($exercise->times -count($exercise->historic->where('created_at', '>=', date('Y-m-d').' 00:00:00')) <= 0)?"tile-complete":"tile-peding"}} transaction-1" style="">
                        <div class="col-md-12" style="text-align:center;padding:10px;"><h4>{{$exercise->title}}</h4></div>
-                       <hr style="background:#eee">
+                       <br/> 
                        <div style="text-align: center;">
                        Tipo : {{($exercise->type == "count")?"Repetição":"Tempo"}}<br/>
                        Pendente Hoje : {{($exercise->times -count($exercise->historic->where('created_at', '>=', date('Y-m-d').' 00:00:00')) >= 0)?$exercise->times -count($exercise->historic->where('created_at', '>=', date('Y-m-d').' 00:00:00')):0}}<br/>
@@ -30,7 +30,7 @@
         <div class="col-lg-12 col-md-12 " style="padding:10px">
            <a href="{{route("cadastro.exercicio")}}">
                 <div class="col-md-12  transaction-1" style="color:#eee">
-                    <div class="col-md-12" style="text-align:center;padding:10px;background:#007bff"><h4>Adicionar Novo</h4></div>
+                    <div class="col-md-12" style="text-align:center;padding:10px;background:#007bff"><h4>Adicionar Novo Exercicio</h4></div>
                 </div>
            </a>
        </div>

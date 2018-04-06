@@ -23,6 +23,7 @@ class PageController extends Controller
         return view("history");
     }
     public function exerciseHistory(){
-        return view("exercise_history");
+        $days = ["","segunda","terça","quarta","quinta","sexta","sabado","domingo"];
+        return view("exercise_history")->with("days",$days);
     }
 }

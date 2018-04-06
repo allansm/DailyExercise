@@ -1,10 +1,11 @@
 @extends("layouts.dash")
 @section("dash-title","Registros")
 @section("dash-content")
+<div class="row table-responsive">
     <table class="table table-dark table-bordered" style="text-align: center;">
         <tr>
             <td>#</td>
-            <td>Titulo</td>
+            <td>Exercicio</td>
             <td>Contagem</td>
             <td>Dias</td>
             <td>Deletar</td>
@@ -23,5 +24,6 @@
         </tr>
         @endforeach
     </table>
+</div>
 @endsection
 
