@@ -35,5 +35,12 @@
            </a>
        </div>
     @endif
+    <div class="col-lg-4 col-md-6 " style="padding:10px;">
+        <a href="{{route("dashboard.statistics")}}">
+            <div class="col-md-12  transaction-1 " style="color:#eee;">
+                <div class="col-md-12 " style="text-align:center;padding:10px;background:#007bff;"><h4>Estatisticas</h4></div>
+            </div>
+        </a>
+    </div>
 </div>
 @endsection

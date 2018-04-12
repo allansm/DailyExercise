@@ -4,13 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/F:/xampp/htdocs/PROJECTS/DailyExercise/resources/views/home.blade.php</file>
-            <file>file:/F:/xampp/htdocs/PROJECTS/DailyExercise/resources/views/layouts/dash.blade.php</file>
-            <file>file:/F:/xampp/htdocs/PROJECTS/DailyExercise/app/Providers/AppServiceProvider.php</file>
+            <file>file:/F:/xampp/htdocs/PROJECTS/DailyExercise/app/Exercise.php</file>
             <file>file:/F:/xampp/htdocs/PROJECTS/DailyExercise/app/Http/Controllers/PageController.php</file>
-            <file>file:/F:/xampp/htdocs/PROJECTS/DailyExercise/public/css/dash.css</file>
-            <file>file:/F:/xampp/htdocs/PROJECTS/DailyExercise/routes/web.php</file>
-            <file>file:/F:/xampp/htdocs/PROJECTS/DailyExercise/resources/views/exercise_history.blade.php</file>
-            <file>file:/F:/xampp/htdocs/PROJECTS/DailyExercise/resources/views/history.blade.php</file>
+            <file>file:/F:/xampp/htdocs/PROJECTS/DailyExercise/resources/views/exercise_history2.blade.php</file>
+            <file>file:/F:/xampp/htdocs/PROJECTS/DailyExercise/app/Account.php</file>
             <file>file:/F:/xampp/htdocs/PROJECTS/DailyExercise/app/Http/Controllers/HistoricController.php</file>
         </group>
     </open-files>

@@ -66,4 +66,15 @@ body{
 a{
     text-decoration:none !important
 }
+.mobile-statistics{
+    display:none;
+}
+@media only screen and (max-width: 600px) {
+    .statistics {
+        display:none;
+    }
+    .mobile-statistics{
+        display:block;
+    }
+}
 
